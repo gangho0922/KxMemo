@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D08753328C8BD23005AAEB4 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D08753228C8BD23005AAEB4 /* ComposeViewController.swift */; };
 		3D35A1AE28C78C74000446D8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D35A1AD28C78C74000446D8 /* Model.swift */; };
 		3D35A1B028C78F2B000446D8 /* MemoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D35A1AF28C78F2B000446D8 /* MemoListTableViewController.swift */; };
 		3DA5B08828BCFB63006AC2C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA5B08728BCFB63006AC2C1 /* AppDelegate.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D08753228C8BD23005AAEB4 /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		3D35A1AD28C78C74000446D8 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		3D35A1AF28C78F2B000446D8 /* MemoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListTableViewController.swift; sourceTree = "<group>"; };
 		3DA5B08428BCFB63006AC2C1 /* KxMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KxMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +119,7 @@
 				3DA5B09228BCFB63006AC2C1 /* LaunchScreen.storyboard */,
 				3DA5B09528BCFB63006AC2C1 /* Info.plist */,
 				3D35A1AF28C78F2B000446D8 /* MemoListTableViewController.swift */,
+				3D08753228C8BD23005AAEB4 /* ComposeViewController.swift */,
 			);
 			path = KxMemo;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D08753328C8BD23005AAEB4 /* ComposeViewController.swift in Sources */,
 				3D35A1AE28C78C74000446D8 /* Model.swift in Sources */,
 				3DA5B08828BCFB63006AC2C1 /* AppDelegate.swift in Sources */,
 				3DA5B08A28BCFB63006AC2C1 /* SceneDelegate.swift in Sources */,

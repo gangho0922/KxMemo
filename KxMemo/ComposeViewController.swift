@@ -1,23 +1,17 @@
 //
-//  MemoListTableViewController.swift
+//  ComposeViewController.swift
 //  KxMemo
 //
-//  Created by AnnKangHo on 2022/09/06.
+//  Created by AnnKangHo on 2022/09/07.
 //
 
 import UIKit
 
-class MemoListTableViewController: UITableViewController {
-    let formatter: DateFormatter = {
-        let f = DateFormatter()
-        f.dateStyle = .long
-        f.timeStyle = .short
-//        f.locale = Locale(identifier: "Ko_kr")
-        return f
-    }()
-    
+class ComposeViewController: UITableViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -27,21 +21,25 @@ class MemoListTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 0
+    }
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return Memo.dummyMemoList.count
+        return 0
     }
 
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
         // Configure the cell...
-        let target = Memo.dummyMemoList[indexPath.row]
-        cell.textLabel?.text = target.content
-        cell.detailTextLabel?.text = formatter.string(from: target.insertDate)
-        
+
         return cell
     }
+    */
 
     /*
     // Override to support conditional editing of the table view.
