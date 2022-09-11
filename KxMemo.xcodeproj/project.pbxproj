@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D08753528C8C1A0005AAEB4 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D08753428C8C1A0005AAEB4 /* ComposeViewController.swift */; };
+		3D08753728C8D983005AAEB4 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D08753628C8D983005AAEB4 /* UIViewController+Alert.swift */; };
 		3D35A1AE28C78C74000446D8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D35A1AD28C78C74000446D8 /* Model.swift */; };
 		3D35A1B028C78F2B000446D8 /* MemoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D35A1AF28C78F2B000446D8 /* MemoListTableViewController.swift */; };
 		3DA5B08828BCFB63006AC2C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA5B08728BCFB63006AC2C1 /* AppDelegate.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		3D08753428C8C1A0005AAEB4 /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		3D08753628C8D983005AAEB4 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		3D35A1AD28C78C74000446D8 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		3D35A1AF28C78F2B000446D8 /* MemoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListTableViewController.swift; sourceTree = "<group>"; };
 		3DA5B08428BCFB63006AC2C1 /* KxMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KxMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +122,7 @@
 				3DA5B09528BCFB63006AC2C1 /* Info.plist */,
 				3D35A1AF28C78F2B000446D8 /* MemoListTableViewController.swift */,
 				3D08753428C8C1A0005AAEB4 /* ComposeViewController.swift */,
+				3D08753628C8D983005AAEB4 /* UIViewController+Alert.swift */,
 			);
 			path = KxMemo;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				3D08753528C8C1A0005AAEB4 /* ComposeViewController.swift in Sources */,
 				3D35A1AE28C78C74000446D8 /* Model.swift in Sources */,
 				3DA5B08828BCFB63006AC2C1 /* AppDelegate.swift in Sources */,
+				3D08753728C8D983005AAEB4 /* UIViewController+Alert.swift in Sources */,
 				3DA5B08A28BCFB63006AC2C1 /* SceneDelegate.swift in Sources */,
 				3D35A1B028C78F2B000446D8 /* MemoListTableViewController.swift in Sources */,
 			);
