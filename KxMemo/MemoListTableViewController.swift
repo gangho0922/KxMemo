@@ -12,7 +12,7 @@ class MemoListTableViewController: UITableViewController {
         let f = DateFormatter()
         f.dateStyle = .long
         f.timeStyle = .short
-//        f.locale = Locale(identifier: "Ko_kr")
+        f.locale = Locale(identifier: "Ko_kr")
         return f
     }()
     
@@ -29,6 +29,15 @@ class MemoListTableViewController: UITableViewController {
     deinit {
         if let token = token {
             NotificationCenter.default.removeObserver(token)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let cell = sender as? UITableViewCell, let indexPath =
+            tableView.indexPath(for: cell){
+            if let vc = segue.destination as? DetailViewController {
+                vc.memo = Memo.dummyMemoList[indexPath.row]
+            }
         }
     }
     override func viewDidLoad() {
