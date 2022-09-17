@@ -9,8 +9,7 @@ import Foundation
 import CoreData
 
 class DataManager {
-    
-    static let shared = DataManager()
+    static let  shared = DataManager()
     private init() {
         
     }
@@ -23,28 +22,47 @@ class DataManager {
     
     func fetchMemo() {
         let request: NSFetchRequest<Memo> = Memo.fetchRequest()
-        let sortByDateDesc = NSSortDescriptor(key: "insertDate",ascending: false)
+        
+        let sortByDateDesc = NSSortDescriptor(key: "insertDate", ascending: false)
         request.sortDescriptors = [sortByDateDesc]
         
-        do{
+        do {
             memoList = try mainContenxt.fetch(request)
         } catch {
             print(error)
         }
     }
-
     
+    func addNewMemo(_ memo: String?) {
+        let newMemo = Memo(context: mainContenxt)
+        newMemo.content = memo
+        newMemo.insertDate = Date()
+        
+        memoList.insert(newMemo, at: 0)
+        
+        saveContext()
+    }
     
+    func deleteMemo(_ memo: Memo?) {
+        if let memo = memo {
+            mainContenxt.delete(memo)
+            saveContext()
+        }
+    }
+    
+    // MARK: - Core Data stack
     lazy var persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "KxMemo")
-        container.loadPersistentStores(completionHandler: {
-            (storeDescription, error) in
+        
+        let container = NSPersistentContainer(name: "Memomo")
+        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
+               
                 fatalError("Unresolved error \(error), \(error.userInfo)")
             }
         })
         return container
     }()
+
     // MARK: - Core Data Saving support
     func saveContext () {
         let context = persistentContainer.viewContext

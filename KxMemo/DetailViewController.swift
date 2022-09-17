@@ -6,9 +6,10 @@
 //
 
 import UIKit
-
+import CoreData
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var memoTableView: UITableView!
     var memo: Memo?
     
     

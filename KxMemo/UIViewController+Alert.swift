@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 extension UIViewController {
     func alert(title: String = "알림", message: String) {

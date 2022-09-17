@@ -12,10 +12,9 @@ class MemoListTableViewController: UITableViewController {
         let f = DateFormatter()
         f.dateStyle = .long
         f.timeStyle = .short
-//        f.locale = Locale(identifier: "Ko_kr")
+        f.locale = Locale(identifier: "Ko_kr")
         return f
     }()
-    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -23,10 +22,10 @@ class MemoListTableViewController: UITableViewController {
         DataManager.shared.fetchMemo()
         tableView.reloadData()
         
-//        tableView.reloadData()
-//        print(#function)
+//      tableView.reloadData()
+//      print(#function)
     }
-    
+     
     var token: NSObjectProtocol?
     
     deinit {
@@ -36,29 +35,28 @@ class MemoListTableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let cell = sender as? UITableViewCell, let indexPath =
-            tableView.indexPath(for: cell){
-            if let vc = segue.destination as? DetailViewController {
+        if let cell = sender as? UITableViewCell, let indexPath = tableView.indexPath(for: cell){
+            if let  vc = segue.destination as? DetailViewController {
                 vc.memo = DataManager.shared.memoList[indexPath.row]
             }
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         token = NotificationCenter.default.addObserver(forName: ComposeViewController.newMemoDidInsert, object: nil, queue: OperationQueue.main) { [weak self] (noti) in
+            
             self?.tableView.reloadData()
         }
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return DataManager.shared.memoList.count
@@ -71,6 +69,12 @@ class MemoListTableViewController: UITableViewController {
         let target = DataManager.shared.memoList[indexPath.row]
         cell.textLabel?.text = target.content
         cell.detailTextLabel?.text = formatter.string(for: target.insertDate)
+        
+        if #available(iOS 11.0, *) {
+            cell.detailTextLabel?.textColor = UIColor(named: "MyLabelColor")
+        } else {
+            cell.detailTextLabel?.textColor = UIColor.lightGray
+        }
         
         return cell
     }
