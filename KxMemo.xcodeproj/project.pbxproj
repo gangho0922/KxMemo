@@ -10,6 +10,8 @@
 		3D08753528C8C1A0005AAEB4 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D08753428C8C1A0005AAEB4 /* ComposeViewController.swift */; };
 		3D08753728C8D983005AAEB4 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D08753628C8D983005AAEB4 /* UIViewController+Alert.swift */; };
 		3D08753928CF0029005AAEB4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D08753828CF0029005AAEB4 /* DetailViewController.swift */; };
+		3D08753C28D0A5A8005AAEB4 /* xodatamodeld.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D08753A28D0A5A8005AAEB4 /* xodatamodeld.xcdatamodeld */; };
+		3D08753F28D0AA3D005AAEB4 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D08753E28D0AA3D005AAEB4 /* DataManager.swift */; };
 		3D35A1AE28C78C74000446D8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D35A1AD28C78C74000446D8 /* Model.swift */; };
 		3D35A1B028C78F2B000446D8 /* MemoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D35A1AF28C78F2B000446D8 /* MemoListTableViewController.swift */; };
 		3DA5B08828BCFB63006AC2C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA5B08728BCFB63006AC2C1 /* AppDelegate.swift */; };
@@ -43,6 +45,8 @@
 		3D08753428C8C1A0005AAEB4 /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		3D08753628C8D983005AAEB4 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		3D08753828CF0029005AAEB4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3D08753B28D0A5A8005AAEB4 /* xodatamodeld.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = xodatamodeld.xcdatamodel; sourceTree = "<group>"; };
+		3D08753E28D0AA3D005AAEB4 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		3D35A1AD28C78C74000446D8 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		3D35A1AF28C78F2B000446D8 /* MemoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListTableViewController.swift; sourceTree = "<group>"; };
 		3DA5B08428BCFB63006AC2C1 /* KxMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KxMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D08753D28D0AA26005AAEB4 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3D08753E28D0AA3D005AAEB4 /* DataManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		3D35A1AC28C78C4E000446D8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +127,7 @@
 		3DA5B08628BCFB63006AC2C1 /* KxMemo */ = {
 			isa = PBXGroup;
 			children = (
+				3D08753D28D0AA26005AAEB4 /* Data */,
 				3D35A1AC28C78C4E000446D8 /* Model */,
 				3DA5B08728BCFB63006AC2C1 /* AppDelegate.swift */,
 				3DA5B08928BCFB63006AC2C1 /* SceneDelegate.swift */,
@@ -126,6 +139,7 @@
 				3D08753428C8C1A0005AAEB4 /* ComposeViewController.swift */,
 				3D08753628C8D983005AAEB4 /* UIViewController+Alert.swift */,
 				3D08753828CF0029005AAEB4 /* DetailViewController.swift */,
+				3D08753A28D0A5A8005AAEB4 /* xodatamodeld.xcdatamodeld */,
 			);
 			path = KxMemo;
 			sourceTree = "<group>";
@@ -285,6 +299,8 @@
 				3DA5B08A28BCFB63006AC2C1 /* SceneDelegate.swift in Sources */,
 				3D35A1B028C78F2B000446D8 /* MemoListTableViewController.swift in Sources */,
 				3D08753928CF0029005AAEB4 /* DetailViewController.swift in Sources */,
+				3D08753F28D0AA3D005AAEB4 /* DataManager.swift in Sources */,
+				3D08753C28D0A5A8005AAEB4 /* xodatamodeld.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,6 +642,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3D08753A28D0A5A8005AAEB4 /* xodatamodeld.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3D08753B28D0A5A8005AAEB4 /* xodatamodeld.xcdatamodel */,
+			);
+			currentVersion = 3D08753B28D0A5A8005AAEB4 /* xodatamodeld.xcdatamodel */;
+			path = xodatamodeld.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3DA5B07C28BCFB63006AC2C1 /* Project object */;
 }
