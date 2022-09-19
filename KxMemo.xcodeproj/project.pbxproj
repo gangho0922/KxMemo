@@ -10,7 +10,7 @@
 		3D08753528C8C1A0005AAEB4 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D08753428C8C1A0005AAEB4 /* ComposeViewController.swift */; };
 		3D08753728C8D983005AAEB4 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D08753628C8D983005AAEB4 /* UIViewController+Alert.swift */; };
 		3D08753928CF0029005AAEB4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D08753828CF0029005AAEB4 /* DetailViewController.swift */; };
-		3D08753C28D0A5A8005AAEB4 /* xodatamodeld.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D08753A28D0A5A8005AAEB4 /* xodatamodeld.xcdatamodeld */; };
+		3D08753C28D0A5A8005AAEB4 /* Memomo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D08753A28D0A5A8005AAEB4 /* Memomo.xcdatamodeld */; };
 		3D08753F28D0AA3D005AAEB4 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D08753E28D0AA3D005AAEB4 /* DataManager.swift */; };
 		3D35A1AE28C78C74000446D8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D35A1AD28C78C74000446D8 /* Model.swift */; };
 		3D35A1B028C78F2B000446D8 /* MemoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D35A1AF28C78F2B000446D8 /* MemoListTableViewController.swift */; };
@@ -139,7 +139,7 @@
 				3D08753428C8C1A0005AAEB4 /* ComposeViewController.swift */,
 				3D08753628C8D983005AAEB4 /* UIViewController+Alert.swift */,
 				3D08753828CF0029005AAEB4 /* DetailViewController.swift */,
-				3D08753A28D0A5A8005AAEB4 /* xodatamodeld.xcdatamodeld */,
+				3D08753A28D0A5A8005AAEB4 /* Memomo.xcdatamodeld */,
 			);
 			path = KxMemo;
 			sourceTree = "<group>";
@@ -300,7 +300,7 @@
 				3D35A1B028C78F2B000446D8 /* MemoListTableViewController.swift in Sources */,
 				3D08753928CF0029005AAEB4 /* DetailViewController.swift in Sources */,
 				3D08753F28D0AA3D005AAEB4 /* DataManager.swift in Sources */,
-				3D08753C28D0A5A8005AAEB4 /* xodatamodeld.xcdatamodeld in Sources */,
+				3D08753C28D0A5A8005AAEB4 /* Memomo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,13 +644,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		3D08753A28D0A5A8005AAEB4 /* xodatamodeld.xcdatamodeld */ = {
+		3D08753A28D0A5A8005AAEB4 /* Memomo.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				3D08753B28D0A5A8005AAEB4 /* xodatamodeld.xcdatamodel */,
 			);
 			currentVersion = 3D08753B28D0A5A8005AAEB4 /* xodatamodeld.xcdatamodel */;
-			path = xodatamodeld.xcdatamodeld;
+			path = Memomo.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
